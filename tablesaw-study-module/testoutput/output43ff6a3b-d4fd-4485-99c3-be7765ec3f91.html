@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Distortion vs K</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Distortion vs K',
+    height: 600,
+    width: 800,
+    xaxis: {
+    title: 'k',
+    },
+
+    yaxis: {
+    title: 'distortion',
+    },
+
+};
+
+var trace0 =
+{
+x: ["null","null","2","3","4","5","6","7","8","9"],
+y: ["null","null","108.64636951286582","80.68417980736768","50.666582001469365","43.17374711326032","36.08419542385784","30.181667177679206","30.834507939449086","24.092195921580977"],
+mode: 'lines',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>

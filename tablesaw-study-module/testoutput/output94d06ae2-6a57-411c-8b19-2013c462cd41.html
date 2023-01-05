@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>年龄人数</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: '年龄人数',
+    height: 600,
+    width: 800,
+
+
+};
+
+var trace0 =
+    {
+        labels: ["33","17","35","37","46","52","28","44","64","39","34","27","73","36","14","24","53","62","29","65","38","19","42","32","25","45","26","48","22","18","23","47","61","55","31","49","43","51","54","63"],
+        values: [69.0, 20.0, 77.0, 51.0, 23.0, 31.0, 32.0, 51.0, 10.0, 21.0, 10.0, 48.0, 10.0, 21.0, 9.0, 30.0, 19.0, 30.0, 19.0, 10.0, 69.0, 20.0, 20.0, 31.0, 30.0, 42.0, 37.0, 40.0, 19.0, 18.0, 19.0, 20.0, 10.0, 11.0, 9.0, 10.0, 1.0, 1.0, 1.0, 1.0],
+        type: 'pie',
+        name: '',
+ }
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
